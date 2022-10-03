@@ -6,6 +6,7 @@ import * as ContactsAPI from "../utils/ContactsAPI"
 const App = () => {
 
   const removeContact = (conatct) => {
+    ContactsAPI.remove(conatct)
     setContacts(contacts.filter(c => c.id !== conatct.id))
   }
 
